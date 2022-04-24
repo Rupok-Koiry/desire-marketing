@@ -1,0 +1,118 @@
+.partner {
+  background-image: url("https://www.uplers.com/wp-content/themes/uplers/assets/images/common-services/come-partner-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.trust_detail {
+  padding-right: 50px;
+  color: #fff;
+}
+.partner .logos ul {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.partner .logos ul:before {
+  height: 100%;
+  width: 2px;
+  background: #00afaf;
+  content: "";
+  position: absolute;
+  left: -30px;
+}
+.partner .logos ul li {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 30px 0;
+  align-items: center;
+  display: flex;
+}
+.partner .logos ul li img {
+  width: 100%;
+  max-width: 155px;
+  max-height: 45px;
+}
+.trust_detail h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #00afaf;
+}
+.trust_detail p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+@media (max-width: 1650px) {
+  .partner .logos ul {
+    padding-left: 50px;
+  }
+  .partner .logos ul li {
+    padding: 15px 0;
+  }
+  .partner .logos ul li img {
+    max-width: 120px;
+    max-height: 40px;
+  }
+  .trust_detail p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1200px) {
+  .partner {
+    padding: 80px 15px;
+  }
+  .partner .logos ul {
+    padding-left: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .partner {
+    padding: 80px 0;
+  }
+  .trust_detail {
+    padding-right: 0;
+  }
+  .trust_detail h2 {
+    font-size: 25px;
+  }
+  .trust_detail p {
+    font-size: 15px;
+  }
+  .partner .logos ul {
+    padding-left: 15px;
+  }
+  .partner .logos ul:before {
+    left: -18px;
+  }
+  .partner .logos ul li {
+    padding: 20px 0;
+  }
+  .partner .logos ul li img {
+    max-width: 80px;
+    max-height: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .partner {
+    padding: 50px 0;
+  }
+  .partner .logos ul {
+    padding-left: 0;
+  }
+  .partner .logos ul li {
+    padding: 15px 10px;
+  }
+  .trust_detail h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 575px) {
+  .partner .logos ul {
+    margin: 0 -10px;
+  }
+  .partner .logos ul:before {
+    display: none;
+  }
+}

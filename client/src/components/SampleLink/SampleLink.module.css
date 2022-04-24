@@ -1,0 +1,17 @@
+.what_content h2 {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.what_img img {
+  border-radius: 6px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.link_content h4 {
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  display: inline-block;
+  border-bottom: solid 2px #00afaf;
+  font-size: 22px;
+  font-weight: bold;
+  color: #060d13;
+}

@@ -1,0 +1,45 @@
+{
+  "name": "desire",
+  "version": "1.0.0",
+  "description": "Learning node, express and mongoDB",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "prod": "NODE_ENV=production nodemon server.js"
+  },
+  "author": "Rupok Koiry",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.1.0",
+    "express-rate-limit": "^5.5.1",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.11",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "sharp": "^0.29.3",
+    "slugify": "^1.6.1",
+    "validator": "^13.6.0",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.4.0",
+    "eslint-config-airbnb": "^19.0.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "parcel-bundler": "^1.12.5",
+    "prettier": "^2.5.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

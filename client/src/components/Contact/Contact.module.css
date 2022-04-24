@@ -1,0 +1,15 @@
+.contact {
+  background-color: #f0f2f5;
+}
+.contact label {
+  color: #00afaf;
+  font-weight: 500;
+}
+.contact input,
+.contact select,
+.contact textarea {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  resize: none;
+}

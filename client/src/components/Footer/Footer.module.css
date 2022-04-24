@@ -1,0 +1,38 @@
+.footer {
+  background-image: url("../../images/footer/footer-bg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+}
+.footer_heading {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.footer p,
+.footer a {
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.footer a:hover {
+  color: #00afaf;
+}
+.contact_details h6 {
+  color: #fff;
+  font-weight: 600;
+}
+.contact_details p {
+  color: #00afaf;
+  font-weight: 600;
+}
+@media screen and (max-width: 1200px) {
+  .footer {
+    background-image: none;
+    padding-top: 50px;
+    background-color: #073b68;
+  }
+}

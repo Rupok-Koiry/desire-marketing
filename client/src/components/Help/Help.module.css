@@ -1,0 +1,50 @@
+.help_sec {
+  counter-reset: sec-counter;
+  background-color: #f0f2f5;
+}
+
+.help_sec .help_card {
+  position: relative;
+  padding-top: 83px;
+  z-index: 10;
+}
+
+.help_sec .help_card:before {
+  counter-increment: sec-counter;
+  content: counter(sec-counter);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  position: absolute;
+  top: -35px;
+  left: 12px;
+  z-index: -1;
+  font-size: 125px;
+  color: #00afaf;
+  -webkit-text-fill-color: #f2f2f2;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #00afaf;
+}
+
+.help_sec .help_card:nth-child(1):before {
+  left: 0;
+}
+
+.help_card h3 {
+  font-size: 25px;
+  padding-bottom: 25px;
+  font-weight: 600;
+}
+
+.help_card p {
+  font-size: 18px;
+  padding-right: 20px;
+}
+
+.help_sec a {
+  text-decoration: underline;
+  color: #999;
+}
+
+.help_sec a:hover {
+  color: #00afaf;
+}
