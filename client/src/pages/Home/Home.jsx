@@ -16,10 +16,10 @@ const Home = () => {
 
       <Banner />
       <Service />
-      <Faq />
       <HowSeoLink />
       <Partner />
       <Testimonial />
+      <Faq />
       <Contact />
       <Footer />
     </React.Fragment>
