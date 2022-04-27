@@ -31,7 +31,6 @@ const App = () => {
   }, [JWT, setUser]);
   return (
     <React.Fragment>
-      <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
@@ -54,7 +53,6 @@ const App = () => {
             element={user.email ? <Navigate to="/" replace /> : <Register />}
           />
         </Routes>
-      </main>
     </React.Fragment>
   );
 };

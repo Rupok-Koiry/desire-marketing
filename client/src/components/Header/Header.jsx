@@ -29,7 +29,7 @@ const Header = () => {
               <NavLink to="/" className="nav-link">
                 Home
               </NavLink>
-              {user.role === "admin" && (
+              {user.email && (
                 <NavLink to="/dashboard" className="nav-link">
                   Dashboard
                 </NavLink>

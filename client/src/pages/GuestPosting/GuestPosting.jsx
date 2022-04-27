@@ -8,10 +8,11 @@ import Help from "../../components/Help/Help";
 import Pricing from "../../components/Pricing/Pricing";
 import SampleLink from "../../components/SampleLink/SampleLink";
 import WhatGuestPosting from "../../components/WhatGuestPosting/WhatGuestPosting";
+import MainLayout from "../Layouts/MainLayout";
 
 const GuestPosting = () => {
   return (
-    <div className="page_gap">
+    <MainLayout className="page_gap">
       <Header />
       <WhatGuestPosting />
       <GuestPostService />
@@ -20,8 +21,7 @@ const GuestPosting = () => {
       <Experts />
       <Pricing />
       <Faq />
-      <Footer />
-    </div>
+    </MainLayout>
   );
 };
 
