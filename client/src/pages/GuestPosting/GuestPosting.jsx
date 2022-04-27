@@ -1,4 +1,5 @@
 import React from "react";
+import GuestPostingBanner from "../../components/Banner/GuestPostingBanner";
 import Experts from "../../components/Experts/Experts";
 import Faq from "../../components/Faq/Faq";
 import Footer from "../../components/Footer/Footer";
@@ -13,6 +14,7 @@ const GuestPosting = () => {
   return (
     <div className="page_gap">
       <Header />
+      <GuestPostingBanner />
       <WhatGuestPosting />
       <GuestPostService />
       <SampleLink />

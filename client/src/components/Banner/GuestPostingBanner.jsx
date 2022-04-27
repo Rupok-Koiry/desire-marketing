@@ -1,13 +1,16 @@
 import React from "react";
+import classes from "./GuestPostingBanner.module.css";
 
 const GuestPostingBanner = () => {
   return (
-    <section>
+    <section className={classes.guest_posting_banner}>
       <div className="container">
-        <div className="row">
+        <div className="row gx-5">
           <div className="col-md-7">
-            <div className="content">
-              <h1>Link Building Services Made Easy</h1>
+            <div className={classes.content}>
+              <h1>
+                Link Building Services <br /> Made Easy
+              </h1>
               <p>
                 As a link building services company, we help brands create
                 growth-driven link building strategies. This enables brands to
@@ -25,76 +28,51 @@ const GuestPostingBanner = () => {
                 services and amplification proposition develop brand awareness,
                 build long-lasting relations and better business outcomes.
               </p>
-              <button>Request A Callback</button>
+              <button className="btn button-secondary">
+                Request A Callback
+              </button>
             </div>
           </div>
           <div className="col-md-5">
-            <div className="bannerform">
-              <div className="defaultForm">
-                <div className="heading-content">
-                  <h2 className="title">
-                    Want to kickstart your first Link Building Project?
-                  </h2>
-                  <p>(no contracts, no commitments)</p>
+            <div className={classes.banner_form_container}>
+              <h2>Want to kickstart your first Link Building Project?</h2>
+              <p>(no contracts, no commitments)</p>
+              <form action="" className={classes.banner_form}>
+                <div className="mb-4">
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="nameInput"
+                    placeholder="Name*"
+                  />
                 </div>
-                <form id="enquiry-form" method="post">
+                <div className="mb-4">
                   <input
-                    type="hidden"
-                    name="action"
-                    value="enquiry_form_ajax"
+                    type="email"
+                    className="form-control"
+                    id="emailInput"
+                    placeholder="Work Email*"
                   />
+                </div>
+                <div className="mb-4">
                   <input
-                    type="hidden"
-                    name="page_title"
-                    value="Professional SEO Services Company | Best SEO Company"
+                    type="phone"
+                    className="form-control"
+                    id="phoneInput"
+                    placeholder="Phone"
                   />
-                  <div className="row justify-content-center">
-                    <div className="col-sm-12">
-                      <div className="form-group ">
-                        <input
-                          type="text"
-                          name="full_name"
-                          placeholder="Name*"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-sm-12">
-                      <div className="form-group ">
-                        <input
-                          type="Email"
-                          name="email"
-                          placeholder="Work Email*"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-sm-12">
-                      <div className="form-group ">
-                        <input type="text" name="phone" placeholder="Phone" />
-                      </div>
-                    </div>
-                    <div className="col-sm-12">
-                      <div className="form-group ">
-                        <textarea
-                          placeholder="Message"
-                          name="message"
-                        ></textarea>
-                      </div>
-                    </div>
-                    <div className="col-sm-12">
-                      <div className="submit-btn">
-                        <input type="submit" value="submit" />
-                        <div className="form-loader" style="display: none;">
-                          <img
-                            src="https://web.archive.org/web/20220301193233im_/https://www.uplers.com/wp-content/themes/uplers/assets/images/loader.svg"
-                            alt="loader"
-                          />
-                        </div>{" "}
-                      </div>
-                    </div>
-                    <div className="ajax-message"></div>
-                  </div>
-                </form>
-              </div>
+                </div>
+                <div className="mb-4">
+                  <textarea
+                    className="form-control"
+                    placeholder="Message"
+                    id="formMessage"
+                  ></textarea>
+                </div>
+                <div className="text-center">
+                  <button className="btn button-primary fw-bold">SUBMIT</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
