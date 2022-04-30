@@ -12,6 +12,8 @@ import { AuthContext } from "../../store/auth-context";
 import classes from "../Form.module.css";
 import axios from "axios";
 import MainLayout from "../Layouts/MainLayout";
+import toastCreator from "../../utils/toastifyCreator";
+import "react-toastify/dist/ReactToastify.css";
 
 //Form validation schema
 const schema = yup.object().shape({
@@ -40,6 +42,7 @@ const Login = () => {
       setUser(response.data.data.user);
       localStorage.setItem("JWT", response.data.token);
     } catch (error) {
+      toastCreator(error.response.data.message, "error");
       console.log(error.response.data.message);
     }
   };

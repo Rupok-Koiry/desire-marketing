@@ -5,8 +5,8 @@ const GuestPostingBanner = () => {
   return (
     <section className={classes.guest_posting_banner}>
       <div className="container">
-        <div className="row gx-5">
-          <div className="col-md-7">
+        <div className="row gx-lg-5 gy-5">
+          <div className="col-xl-7 col-lg-6 order-lg-0 order-1">
             <div className={classes.content}>
               <h1>
                 Link Building Services <br /> Made Easy
@@ -33,7 +33,7 @@ const GuestPostingBanner = () => {
               </button>
             </div>
           </div>
-          <div className="col-md-5">
+          <div className="col-xl-5 col-lg-6 order-lg-1 order-0">
             <div className={classes.banner_form_container}>
               <h2>Want to kickstart your first Link Building Project?</h2>
               <p>(no contracts, no commitments)</p>

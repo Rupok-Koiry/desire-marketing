@@ -11,6 +11,8 @@ import { ToastContainer } from "react-toastify";
 import { AuthContext } from "../../store/auth-context";
 import classes from "../Form.module.css";
 import MainLayout from "../Layouts/MainLayout";
+import toastCreator from "../../utils/toastifyCreator";
+import "react-toastify/dist/ReactToastify.css";
 
 //Form validation schema
 const schema = yup.object().shape({
@@ -46,6 +48,7 @@ const Register = () => {
       setUser(response.data.data.user);
       localStorage.setItem("JWT", response.data.token);
     } catch (error) {
+      toastCreator("Email is already exist!", "error");
       console.log(error.response.data.message);
     }
   };

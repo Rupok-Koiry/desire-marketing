@@ -86,7 +86,7 @@ body a {
 }
 
 .page_gap {
-  margin: 120px 0 60px;
+  margin: 60px 0;
 }
 .accordion .accordion-button:not(.collapsed) {
   color: #00afaf;
