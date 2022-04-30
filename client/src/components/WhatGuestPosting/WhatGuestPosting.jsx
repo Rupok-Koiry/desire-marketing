@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import classes from "./WhatGuestPosting.module.css";
 const WhatGuestPosting = () => {
   return (
-    <section className={classes.what}>
+    <section className={`${classes.what} section_gap`}>
       <Container>
         <Row className="align-items-center g-5">
           <Col md={6}>

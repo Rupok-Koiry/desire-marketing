@@ -11,8 +11,8 @@ const Header = () => {
     setUser({});
   };
   return (
-    <header>
-      <Navbar bg="light" expand="lg" fixed="top" className={classes.navbar}>
+    <header className="sticky-top">
+      <Navbar bg="light" expand="lg" className={classes.navbar}>
         <Container>
           <NavLink to="/" className="navbar-brand">
             <img
@@ -29,7 +29,7 @@ const Header = () => {
               <NavLink to="/" className="nav-link">
                 Home
               </NavLink>
-              {user.role === "admin" && (
+              {user.email && (
                 <NavLink to="/dashboard" className="nav-link">
                   Dashboard
                 </NavLink>

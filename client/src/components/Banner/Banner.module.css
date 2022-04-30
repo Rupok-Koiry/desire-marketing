@@ -8,8 +8,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 99.9vh;
-  clip-path: polygon(0 0, 100% 0, 100% 85vh, 50% 99.9vh, 0 85vh);
+  height: calc(99.9vh - 76px);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(85vh - 76px),
+    50% calc(99.9vh - 76px),
+    0 calc(85vh - 76px)
+  );
   display: flex;
   justify-content: center;
   align-items: center;

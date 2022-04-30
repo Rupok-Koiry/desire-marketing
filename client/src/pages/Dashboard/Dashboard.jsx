@@ -54,22 +54,55 @@ const Dashboard = () => {
               Home
             </NavLink>
           </li>
-
-          <li className="nav-item">
-            <NavLink to={`blogs`} className="nav-link text-dark dashlink">
-              <i className="fas fa-comments me-3 text-primary fa-fw"></i>
-              All Blog
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink
-              to={`add-new-blog`}
-              className="nav-link text-dark dashlink"
-            >
-              <i className="fas fa-comments me-3 text-primary fa-fw"></i>
-              Add a new blog
-            </NavLink>
-          </li>
+          {user.role === "admin" ? (
+            <React.Fragment>
+              <li className="nav-item">
+                <NavLink to={`blogs`} className="nav-link text-dark dashlink">
+                  <i className="fas fa-comments me-3 text-primary fa-fw"></i>
+                  All Blog
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  to={`add-new-blog`}
+                  className="nav-link text-dark dashlink"
+                >
+                  <i className="fas fa-comments me-3 text-primary fa-fw"></i>
+                  Add a new blog
+                </NavLink>
+              </li>
+            </React.Fragment>
+          ) : (
+            <React.Fragment>
+              <li className="nav-item">
+                <NavLink
+                  to={`guest-post`}
+                  className="nav-link text-dark dashlink"
+                >
+                  <i className="fas fa-comments me-3 text-primary fa-fw"></i>
+                  Guest Posts
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  to={`brand-link`}
+                  className="nav-link text-dark dashlink"
+                >
+                  <i className="fas fa-comments me-3 text-primary fa-fw"></i>
+                  Brand Link
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  to={`hero-link`}
+                  className="nav-link text-dark dashlink"
+                >
+                  <i className="fas fa-comments me-3 text-primary fa-fw"></i>
+                  Hero Link
+                </NavLink>
+              </li>
+            </React.Fragment>
+          )}
           <li className="nav-item" onClick={handleLogout}>
             <span
               className="nav-link text-dark dashlink"
