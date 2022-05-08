@@ -1,0 +1,35 @@
+.banner {
+  background-image: linear-gradient(
+      rgba(25, 50, 76, 0.8),
+      rgba(31, 63, 95, 0.8)
+    ),
+    url("../../images/banner/herobg.min_.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: calc(99.9vh - 76px);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(85vh - 76px),
+    50% calc(99.9vh - 76px),
+    0 calc(85vh - 76px)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner_content {
+  text-align: center;
+  color: #fff;
+}
+.banner_content h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+.banner_content p {
+  font-size: 18px;
+  margin: 20px 0 40px;
+}

@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  font-family: "Montserrat", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+body ul {
+  padding-left: 0;
+  list-style: none;
+}
+body a {
+  text-decoration: none;
+}
+.section_gap {
+  margin: 60px 0;
+}
+.section_padding {
+  padding: 80px 0;
+}
+.section_heading {
+  text-align: center;
+  color: #1f3f5f;
+  margin-bottom: 35px;
+}
+.section_heading h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+.section_heading h3 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+}
+.section_heading h3.colorful {
+  color: #00afaf;
+}
+.section_heading p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #0c1926;
+}
+.highlight {
+  color: #00afaf;
+}
+.btn.button-primary {
+  background-color: #00afaf;
+  border-color: #00afaf;
+  color: #fff;
+  border-width: 2px;
+  border-radius: 50px;
+  font-weight: 500;
+  padding: 8px 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.btn.button-primary:hover {
+  background-color: transparent;
+  border-color: #00afaf;
+  color: #00afaf;
+}
+.btn.button-secondary {
+  background-color: #1f3f5f;
+  border-color: #1f3f5f;
+  color: #fff;
+  border-radius: 50px;
+  border-width: 2px;
+
+  font-weight: 500;
+  padding: 12px 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.btn.button-secondary:hover {
+  background-color: #19324c;
+  border-color: #1f3f5f;
+  color: #fff;
+}
+
+.page_gap {
+  margin: 60px 0;
+}
+.accordion .accordion-button:not(.collapsed) {
+  color: #00afaf;
+}
+.swiper {
+  height: 380px;
+}
+.swiper .swiper-pagination-bullet-active {
+  background-color: #00afaf;
+}
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+  color: #1f3f5f;
+}
+.error {
+  color: crimson;
+}
+.dashboard .active {
+  background-color: #ebebeb;
+}
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .dropdown-menu li {
+    position: relative;
+  }
+  .nav-item .submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+  }
+  .nav-item .submenu-left {
+    right: 100%;
+    left: auto;
+  }
+  .dropdown-menu > li:hover {
+    background-color: #f1f1f1;
+  }
+  .dropdown-menu > li:hover > .submenu {
+    display: block;
+  }
+}
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu {
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+}
+/* ============ small devices .end// ============ */
