@@ -29,31 +29,112 @@ const Header = () => {
               <NavLink to="/" className="nav-link">
                 Home
               </NavLink>
+              <NavLink to="/about" className="nav-link">
+                About us
+              </NavLink>
               {user.email && (
                 <NavLink to="/dashboard" className="nav-link">
                   Dashboard
                 </NavLink>
               )}
-              <NavLink to="/about" className="nav-link">
-                About us
-              </NavLink>
-              <NavDropdown title="Services" id="basic-nav-dropdown">
-                <NavLink to="/another-first" className="dropdown-item">
-                  Another Action
-                </NavLink>
-                <NavLink to="/another-second" className="dropdown-item">
-                  Another Action
-                </NavLink>
-                <NavLink to="/another-third" className="dropdown-item">
-                  Another Action
-                </NavLink>
-                <NavDropdown.Divider />
-                <NavLink to="/another-fourth" className="dropdown-item">
-                  Another Action
-                </NavLink>
-              </NavDropdown>
+              {/* services dropdown starts */}
+              <li className="nav-item dropdown" id="myDropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="/"
+                >
+                  Services
+                </a>
+                <ul className="dropdown-menu">
+                  <li>
+                    {" "}
+                    <a className="dropdown-item" href="/">
+                      {" "}
+                      Link Building &raquo;{" "}
+                    </a>
+                    <ul className="submenu dropdown-menu">
+                      <li>
+                        <NavLink
+                          className="dropdown-item"
+                          to="/link-building-service"
+                        >
+                          Link Building Service
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          className="dropdown-item"
+                          to="/guest-posting-service"
+                        >
+                          Guest Posting Service
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          className="dropdown-item"
+                          to="/niche-edits-service"
+                        >
+                          Niche Edits Service
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          className="dropdown-item"
+                          to="/igaming-link-building"
+                        >
+                          Igaming Link Building
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          className="dropdown-item"
+                          to="/pbn-link-service"
+                        >
+                          PBN Link Service
+                        </NavLink>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    {" "}
+                    <a className="dropdown-item" href="/">
+                      {" "}
+                      Digital Marketing &raquo;{" "}
+                    </a>
+                    <ul className="submenu dropdown-menu">
+                      <li>
+                        <NavLink className="dropdown-item" to="/seo-services">
+                          Seo Services
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          className="dropdown-item"
+                          to="/web-development-services"
+                        >
+                          Web Development Services
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          className="dropdown-item"
+                          to="/facebook-advertisement-service"
+                        >
+                          Facebook Advertisement Service
+                        </NavLink>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              {/* services dropdown Ends */}
+
               <NavLink to="/blog" className="nav-link">
-                Blog
+                Case Studies
+              </NavLink>
+              <NavLink to="/contact" className="nav-link">
+                Contact Us
               </NavLink>
 
               {user.email ? (
@@ -64,13 +145,10 @@ const Header = () => {
                   Logout
                 </Button>
               ) : (
-                <NavLink to="/login" className="nav-link">
+                <NavLink to="/login" className="btn button-primary btn-sm">
                   Login
                 </NavLink>
               )}
-              <Button className="btn button-primary ms-3 btn-sm">
-                BUY LINKS
-              </Button>
             </Nav>
           </Navbar.Collapse>
         </Container>

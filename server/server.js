@@ -9,10 +9,8 @@ process.on('uncaughtException', (err) => {
   console.log(err.name, err.message);
   process.exit(1);
 });
-
 //Connection to the database
-const DB = process.env.DATABASE.replace('<PASSWORD>', process.env.DB_PASSWORD);
-mongoose.connect(DB).then(() => {
+mongoose.connect(process.env.DATABASE).then(() => {
   console.log('DB connection successful');
 });
 
